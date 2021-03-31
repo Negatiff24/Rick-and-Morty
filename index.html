@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>R_A_M</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="stylesheet" type="text/css" href="./assets/styles/lib/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/lib/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./assets/styles/hero.css">
+
+</head>
+<body style="background-color: #000">
+
+	<nav class="navbar navbar-dark bg-dark">
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="#">Rick And Morty</a>
+	  </div>
+	</nav>
+
+	<section class="text-center text-white pt-5 pb-5 hero">
+		<div class="container">
+			<img src="./assets/styles/img/logo.png" class="hero__logo" alt="Rick And Morty Logo">
+			<h2 class="pt-3 pb-4">Все персы мультивёрса в одном плэйс</h2>
+		</div>
+
+		<div class="row g-4">
+		  <div class="col-sm">
+		    <input type="text" class="form-control" placeholder="Имя" aria-label="Name" id="searchName">
+		  </div>
+		  <div class="col-sm">
+		    <select class="form-select" aria-label="Default select example" id="searchStatus">
+			  <option selected value="">Статус не важен</option>
+			  <option value="alive">Жиж</option>
+			  <option value="dead">Вмер</option>
+			  <option value="unknown">Неизвестно</option>
+			</select>
+		  </div>
+		  <div class="col-sm">
+		     <select class="form-select" aria-label="Default select example" id="searchGender">
+			  <option selected value="">Пол не важен</option>
+			  <option value="female">Женщина</option>
+			  <option value="male">Мужчина</option>
+			  <option value="genderless">Бесполое</option>
+			  <option value="unknown">Неизвестное</option>
+			</select>
+		  </div>
+		  <div class="col-sm">
+		  	<button type="button" onclick="getCharacterListFromServer(true)" class="btn btn-success">[НЫА]йти</button>
+		  </div>
+		</div>
+	</section>
+
+	<section class="pt-5 pb-5 characters">
+		<div class="container">
+			<h2 class="pt-4 text-center text-white">Персонажи</h2>
+			<div class="row" id="charactersList"></div>
+			<button type="button" onclick="getCharacterListFromServer()" class="btn btn-success" id="showMoreButton">Показать ещё</button>
+		</div>
+	</section>
+
+	<script type="text/javascript" src="./assets/scripts/lib/bootstrap.min.js"></script>
+	<script type="text/javascript" src="./assets/scripts/lib/axios.min.js"></script>
+	<script type="text/javascript" src="./assets/scripts/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+.hero__logo {
+	max-width: 540px;
+}
+
+.btn {
+	width: 100%;
+	background-color: #97ce4c;
+	border-color: #97ce4c;
+}
+
+.btn:hover {
+	background-color: #97ce4c;
+	border-color: #97ce4c;
+}
+
+@media screen and (max-width: 1039px) {
+	.row.g-0 {
+		justify-content: space-between;
+	}
+
+	.col-md-8 {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.col-md-8 {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.col-md-8 {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.hero__logo {
+		width: 300px;
+	}
+}
