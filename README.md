@@ -1,0 +1,1 @@
+# [Rick And Morty](https://negatiff24.github.io/Rick-and-Morty/)
